@@ -3,10 +3,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 66vh;
+}
+
+.hello {
+    background-color: rgb(250, 229, 220);
+    position: absolute; top: 0; left: 0; height: 100%; width: 100%;
+}
+
+.SignUp-Box {
+    padding: 4.44%;
+    background-color: #FFFFFF;
 }
 
 .line-break {
-    margin-top: 10px; /* Adjust the margin as needed */
+    margin-top: 30px; /* Adjust the margin as needed */
 }
+
+h1 {
+    font-size: 100px !important;
+}
+
 

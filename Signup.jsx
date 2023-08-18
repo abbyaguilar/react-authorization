@@ -24,59 +24,66 @@ function Signup() {
             .catch(err => console.log(err))
     }
     return (
-        <div className="SignUp-alignment">
-            <div className="SignUp-Box">
-                <h2>Sign Up</h2>
-                <form onSubmit={handleSubmit}>
-                    <div className="SignUpForm">
-                        <label htmlFor="email">
-                            <strong>Name</strong>
-                        </label>
-                        <input
-                            type="text"
-                            placeholder="Enter Name"
-                            autoComplete='off'
-                            name="email"
-                            className='form-control'
-                            onChange={(e) => setName(e.target.value)}
-                        />
-                    </div>
-                    <div className="SignUpForm">
-                        <label htmlFor="email">
-                            <strong>Email</strong>
-                        </label>
-                        <input
-                            type="email"
-                            placeholder="Enter Email"
-                            autoComplete="off"
-                            className="form-control"
-                            onChange={(e) => setEmail(e.target.value)}
-                        />
-                    </div>
-                    <div className="SignUpForm">
-                        <label htmlFor="email">
-                            <strong>Password</strong>
-                        </label>
-                        <input
-                            type="password"
-                            placeholder="Enter Password"
-                            name="password"
-                            className="form-control"
-                            onChange={(e) => setPassword(e.target.value)}
-                        />
-                    </div>
-                    <div className="line-break"></div> {/* Add this line */}
-                    <button type="submit" className="success-button">
-                        Sign Up
-                    </button>
-                    <div className="line-break"></div> {/* Add this line */}
-                    <p>Already Have an Account</p>
-                    <Link to="/login" className="button-border">
-                        <button>Login</button>
-                    </Link>
-                </form>
+        <div className='hello'>
+            <center>
+                <div className="line-break"></div> {/* Add this line */}
+                <h1><strong>not available</strong></h1>
+                <h3>the app that rewards you for going <strong>offline</strong></h3>
+            </center>
+            <div className="line-break"></div> {/* Add this line */}
+            <div className="SignUp-alignment">
+                <div className="SignUp-Box">
+                    <center><h2>Sign Up</h2></center>
+                    <form onSubmit={handleSubmit}>
+                        <div className="SignUpForm">
+                            <label htmlFor="email">
+                                <strong>Name</strong>
+                            </label>
+                            <input
+                                type="text"
+                                placeholder="Enter Name"
+                                autoComplete='off'
+                                name="email"
+                                className='form-control'
+                                onChange={(e) => setName(e.target.value)}
+                            />
+                        </div>
+                        <div className="SignUpForm">
+                            <label htmlFor="email">
+                                <strong>Email</strong>
+                            </label>
+                            <input
+                                type="email"
+                                placeholder="Enter Email"
+                                autoComplete="off"
+                                className="form-control"
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                        </div>
+                        <div className="SignUpForm">
+                            <label htmlFor="email">
+                                <strong>Password</strong>
+                            </label>
+                            <input
+                                type="password"
+                                placeholder="Enter Password"
+                                name="password"
+                                className="form-control"
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
+                        </div>
+                        <div className="line-break"></div> {/* Add this line */}
+                        <center><button type="submit" className="success-button">
+                            Sign Up
+                        </button></center>
+                        <div className="line-break"></div> {/* Add this line */}
+                        <Link to="/login" className="button-border">
+                            Already Have an Account?
+                        </Link>
+                    </form>
+                </div>
             </div>
-        </div>
+        </div >
     );
 
 }

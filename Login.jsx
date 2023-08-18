@@ -27,39 +27,46 @@ function Login() {
             .catch(err => console.log(err))
     }
     return (
-        <div className="SignUp-alignment">
-            <div className="SignUp-Box">
-                <h2>Login</h2>
-                <form onSubmit={handleSubmit}>
-                    <div className="SignUpForm">
-                        <label htmlFor="email">
-                            <strong>Email</strong>
-                        </label>
-                        <input
-                            type="email"
-                            placeholder="Enter Email"
-                            autoComplete="off"
-                            className="form-control"
-                            onChange={(e) => setEmail(e.target.value)}
-                        />
-                    </div>
-                    <div className="SignUpForm">
-                        <label htmlFor="email">
-                            <strong>Password</strong>
-                        </label>
-                        <input
-                            type="password"
-                            placeholder="Enter Password"
-                            name="password"
-                            className="form-control"
-                            onChange={(e) => setPassword(e.target.value)}
-                        />
-                    </div>
-                    <div className="line-break"></div> {/* Add this line */}
-                    <button type="submit" className="success-button">
-                        Login
-                    </button>
-                </form>
+        <div className="hello">
+            <center>
+                <div className="line-break"></div> {/* Add this line */}
+                <h1><strong>not available</strong></h1>
+                <h3>the app that rewards you for going <strong>offline</strong></h3>
+            </center>
+            <div className="SignUp-alignment">
+                <div className="SignUp-Box">
+                    <center><h2>Login</h2></center>
+                    <form onSubmit={handleSubmit}>
+                        <div className="SignUpForm">
+                            <label htmlFor="email">
+                                <strong>Email</strong>
+                            </label>
+                            <input
+                                type="email"
+                                placeholder="Enter Email"
+                                autoComplete="off"
+                                className="form-control"
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                        </div>
+                        <div className="SignUpForm">
+                            <label htmlFor="email">
+                                <strong>Password</strong>
+                            </label>
+                            <input
+                                type="password"
+                                placeholder="Enter Password"
+                                name="password"
+                                className="form-control"
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
+                        </div>
+                        <div className="line-break"></div> {/* Add this line */}
+                        <center><button type="submit" className="success-button">
+                            Login
+                        </button></center>
+                    </form>
+                </div>
             </div>
         </div>
     );
