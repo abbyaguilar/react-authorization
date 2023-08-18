@@ -1,0 +1,12 @@
+
+.SignUp-alignment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.line-break {
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
